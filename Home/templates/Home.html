@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen p-5 md:p-10">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <!-- Video Section -->
+        <div class="w-full">
+            <video 
+                controls 
+                class="w-full rounded-2xl shadow-2xl border-4 border-white/20 bg-black"
+            >
+                <source src="tu-video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <!-- Table Section -->
+        <div class="w-full overflow-hidden rounded-2xl shadow-2xl">
+            <table class="w-full bg-white">
+                <thead class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+                    <tr>
+                        <th class="px-6 py-5 text-left text-sm font-semibold uppercase tracking-wider">
+                            Nombre
+                        </th>
+                        <th class="px-6 py-5 text-left text-sm font-semibold uppercase tracking-wider">
+                            Fecha
+                        </th>
+                        <th class="px-6 py-5 text-left text-sm font-semibold uppercase tracking-wider">
+                            Hora
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <!-- 
+                    Esto se genera dinamicamento en el js
+
+
+                    <tr class="hover:bg-indigo-50 hover:scale-[1.01] transition-all duration-200 even:bg-gray-50">
+                        <td class="px-6 py-4 text-gray-800 font-medium">Juan Pérez</td>
+                        <td class="px-6 py-4 text-gray-600">2025-10-15</td>
+                        <td class="px-6 py-4 text-gray-600">12:15 pm</td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
